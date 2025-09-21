@@ -20,7 +20,7 @@ body{
     justify-content: center;
     background: linear-gradient(rgb(6, 122, 255), beige 60%, beige 60%,rgb(6, 122, 255));
     font-family: sans-serif, 'Montserrat';
-    overflow: hidden;
+     overflow: auto;
     flex-direction: column;
 }
 
@@ -85,8 +85,21 @@ main{
     }
 
     .galeria img {
-        width: 100%;
+        width: 90vw;      /* Imagem ocupa quase toda largura */
+        max-width: 350px; /* Limita tamanho máximo */
         height: auto;
         border-radius: 10px;
+        margin-bottom: 20px; /* Espaço entre imagens */
     }
+}
+
+footer{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    user-select: none;
 }
